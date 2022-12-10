@@ -30,7 +30,11 @@ class Window(QtWidgets.QWidget):
         self.ui = Ui_Form
         self.ui.setupUi(self)
 
-    def initEvents(self):
+    #     self.initSignals()
+    #
+    # def initSignals(self) -> None:
+    #     self.ui.dial.
+
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication()
