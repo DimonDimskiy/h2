@@ -23,11 +23,15 @@
 
 from PySide6 import QtWidgets
 
+from ui.c_signals_events import Ui_Form
 
 class Window(QtWidgets.QWidget):
 
     def __init__(self, parent=None):
         super().__init__(parent)
+
+        self.ui = Ui_Form()
+        self.ui.setupUi(self)
 
 
 if __name__ == "__main__":
