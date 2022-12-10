@@ -3,7 +3,7 @@
 Форма для приложения (ui/d_eventfilter_settings.ui)
 
 Программа должна обладать следующим функционалом:
-c
+
 1. Добавить для dial возможность установки значений кнопками клавиатуры(+ и -),
    выводить новые значения в консоль
 
@@ -19,22 +19,15 @@ c
 """
 
 from PySide6 import QtWidgets
-from ui.d_eventfilter_settings import Ui_Form
-
+from ui.c_signals_events import Ui_Form
 
 class Window(QtWidgets.QWidget):
 
     def __init__(self, parent=None):
         super().__init__(parent)
 
-        self.ui = Ui_Form
+        self.ui = Ui_Form()
         self.ui.setupUi(self)
-
-    #     self.initSignals()
-    #
-    # def initSignals(self) -> None:
-    #     self.ui.dial.
-
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication()
