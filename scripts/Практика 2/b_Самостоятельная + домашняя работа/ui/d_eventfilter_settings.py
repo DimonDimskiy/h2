@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QApplication, QComboBox, QDial, QHBoxLayout,
     QLCDNumber, QSizePolicy, QSlider, QVBoxLayout,
     QWidget)
 
-class Ui_Form(:
+class Ui_Form:
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
